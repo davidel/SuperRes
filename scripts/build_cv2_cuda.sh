@@ -2,6 +2,8 @@
 
 set -ex
 
+TOPDIR=$(pwd)
+
 mkdir -p opencv_build
 pushd opencv_build
 
@@ -28,5 +30,8 @@ cmake \
 
 make -j8 install
 
+cp lib/python3/cv2.*.so "$TOPDIR"
+
 popd
 popd
+
