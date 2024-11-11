@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 set -ex
 
-mkdir opencv_build
+mkdir -p opencv_build
 pushd opencv_build
 
 SCRDIR=$(pwd)
